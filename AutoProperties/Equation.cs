@@ -9,18 +9,19 @@ namespace AutoProperties
     //Класс уравнения
     class Equation
     {
-        public double A { get; set; }//Коэфицент А
-        public double B { get; set; }//Коэфицент В
-        public double X { get; set; }//Результирующее поле класса
+        public double second { get; set; }//Коэфицент А
+        public double first { get; set; }//Коэфицент В
+
+        //Конструктор
         public Equation(double a, double b)
         {
-            A = a;
-            B = b;
+            second = a;
+            first = b;
         }
 
         public double root(double a, double b)
         {
-            return X = -B / A;
+            return -first / second;
         }
     }
 }
